@@ -1,0 +1,35 @@
+.results {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.results .items-container {
+  padding: 7px 15px 7px 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.results .items-container:first-of-type {
+  border-radius: 4px 4px 0 0;
+}
+
+.results .items-container:last-of-type {
+  border-radius: 0 0 4px 4px;
+}
+
+.results .items-container:only-of-type {
+  border-radius: 4px;
+}
+
+.results .items-container:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.location-secondary {
+  color: rgb(136, 136, 136);
+  font-size: 0.95rem;
+}

@@ -1,0 +1,22 @@
+.journey-form {
+  background-color: rgb(17, 17, 17);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 250px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.journey-form input {
+  background-color: rgb(78, 78, 78);
+  border-radius: 4px;
+  padding: 2px 5px 2px 5px;
+  height: 40px;
+  font-size: 1.1rem;
+}
+
+.journey-form .submit {
+  background-color: rgb(70, 82, 134);
+}

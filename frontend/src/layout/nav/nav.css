@@ -1,0 +1,119 @@
+.nav {
+  background-color: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  anchor-name: --nav;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  font-size: 1.1rem;
+  min-height: 45px;
+}
+.logo {
+  height: auto;
+  width: 170px;
+  margin-left: 20px;
+}
+.nav-left {
+  display: flex;
+}
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  anchor-name: --profile;
+  transition: 0.2s;
+}
+
+.profile-menu {
+  position: absolute;
+  position-anchor: --profile;
+  top: anchor(bottom);
+  left: anchor(right);
+  min-width: 200px;
+  width: fit-content;
+  translate: -100%;
+  margin-top: 2px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  background-color: #363636;
+  transition: 0.2s;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.profile-menu .settings {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.inbox-icon .part-b {
+  color: rgb(0, 0, 0);
+}
+.hr {
+  color: #484848;
+  margin: 10px 0 10px 0;
+  border-radius: 4px;
+}
+
+.toggle-button-darkmode {
+  margin-left: auto;
+}
+
+.journeys-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.view-journeys {
+  anchor-name: --view-journeys;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+.journey-list {
+  position-anchor: --view-journeys;
+  top: anchor(bottom);
+  left: anchor(right);
+  background-color: var(--bg-menu);
+  border-radius: 10px;
+  translate: -100%;
+  width: fit-content;
+  white-space: nowrap;
+  color: #f1f1ec;
+  padding: 10px;
+  font-weight: 300;
+}
+
+.journey-nav:has(.journey-list:popover-open) .arrow {
+  transform: rotate(90deg);
+}
+
+.journey-item {
+  cursor: pointer;
+  width: 100%;
+  padding: 3px 10px 3px 10px;
+  border-radius: 4px;
+}
+
+.journey-item:hover {
+  background-color: #474747;
+}
+
+.journey-item.add {
+  background-color: #aad3df;
+  color: #333333;
+}

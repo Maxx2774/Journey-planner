@@ -1,0 +1,38 @@
+.toggle {
+  background-color: #9fc48f;
+  width: 35px;
+  height: 21px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.toggle.active {
+  background-color: #7e7e7e;
+}
+
+.toggle.disabled {
+  background-color: rgb(86, 86, 86);
+  cursor: unset;
+}
+
+.toggle.disabled > * {
+  background-color: rgb(129, 129, 129);
+}
+
+.toggle-circle {
+  background-color: #f1f1ec;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle .active {
+  left: 3px;
+}
+
+.toggle .inactive {
+  right: 3px;
+}

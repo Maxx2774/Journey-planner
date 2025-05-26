@@ -1,0 +1,43 @@
+.map-container {
+  width: 100%;
+  height: calc(100dvh - 55px);
+  position: relative;
+}
+
+.marker-svg.highlighted {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.marker-position {
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.marker-dot {
+  fill: rgb(255, 255, 255);
+}
+
+.marker-main {
+  fill: rgb(173, 52, 52);
+}
+
+.leaflet-popup-content {
+  background-color: rgb(255, 255, 255);
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.leaflet-popup-tip {
+  display: none;
+}
