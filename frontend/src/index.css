@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -7,33 +6,72 @@
   line-height: 1.5;
   font-weight: 400;
 
+  /* Updated color scheme */
+  --primary: #2A4365;
+  --primary-light: #4A5568;
+  --secondary: #48BB78;
+  --accent: #F6AD55;
+  --background: #1A202C;
+  --surface: #2D3748;
+  --text: #F7FAFC;
+  --text-secondary: #CBD5E0;
+  --error: #F56565;
+  --success: #48BB78;
+  --warning: #F6AD55;
+  --bg-menu: #2D3748;
+
   color-scheme: light dark;
-  color: #ffffff;
-  background-color: #242424;
+  color: var(--text);
+  background-color: var(--background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --bg-menu: #333333;
 }
 
 body {
   overflow: hidden;
+  margin: 0;
+  min-height: 100vh;
 }
 
 button {
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 h1 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+input, textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: -1px;
 }

@@ -1,25 +1,37 @@
 .journey-sidebar {
-  min-width: 275px;
-  max-width: 275px;
-  padding: 15px;
+  min-width: 300px;
+  max-width: 300px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  background-color: #f2efe9;
-  color: #333333;
+  background-color: var(--surface);
+  color: var(--text);
   anchor-name: --journey-sidebar;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .pick-location {
-  background-color: #ffffff;
-  height: 40px;
-  border-radius: 4px;
-  padding: 8px;
+  background-color: var(--background);
+  height: 45px;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
   width: 100%;
-  outline: #dadada solid 1px;
-  font-size: 1.1rem;
+  border: 1px solid var(--primary-light);
+  font-size: 1rem;
   font-weight: 400;
+  color: var(--text);
+  transition: all 0.2s ease-in-out;
+}
+
+.pick-location:hover {
+  border-color: var(--primary);
 }
 
 .pick-location::placeholder {
-  color: #666666;
+  color: var(--text-secondary);
+}
+
+.pick-location:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary-light);
 }
